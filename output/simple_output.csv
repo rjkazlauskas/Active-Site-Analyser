@@ -1,0 +1,4 @@
+Residue, , ,Distance,Origin, , ,Other Atoms
+THR,85,N,1.32,LEU,84,C,CA
+SER,83,C,1.33,LEU,84,N,"O,CA,N"
+ARG,153,NE,2.78,LEU,84,O,
