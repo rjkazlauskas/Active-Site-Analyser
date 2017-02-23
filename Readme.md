@@ -1,14 +1,14 @@
 ##CONTENTS OF THIS FILE
 -----------------------------
  
- * [Quickstart](##quickstart)
+ * [Quickstart](##Quickstart)
  * Introduction
  * Requirements 
  * Configuration
  * Output
  * Troubleshooting
 
-[Quickstart](##quickstart)
+##Quickstart
 ----------------------------
 This program reads through pdb files and returns atoms that are close to a
 predifined active site residue specified by the user.  
