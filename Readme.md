@@ -54,7 +54,7 @@ A
 
 specifies using PDB file with four-digit code 4EB0, chain A, residue 84 and 3 angstroms as search parameters
 
-4.  Open program in an advanced text editor (BBEdit), or IDLE such as Pycharm and run the program.  The output of the program should be displayed and stored in a new folder named "Output"
+Open program in an advanced text editor (BBEdit), or IDLE such as Pycharm and run the program.  The output of the program should be displayed and stored in a new folder named "Output"
 
 ##OUTPUT
 ----------------------------
