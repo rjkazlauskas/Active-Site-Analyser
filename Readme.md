@@ -3,13 +3,13 @@
  
  * [Quickstart](##Quickstart)
  * [Introduction](##Introduction)
- * Requirements 
- * Configuration
- * Output
+ * [Requirements](#Requirements) 
+ * [Configuration](#Configuration)
+ * [Output](#Output)
  * [Troubleshooting](#Troubleshooting)
 
-## QUICKSTART
-
+## <a name="Quickstart"></a>Quickstart
+----------------------------
 This program reads through pdb files and returns atoms that are close to a
 predifined active site residue specified by the user.  
 To set up please follow the steps below:
@@ -18,8 +18,8 @@ To set up please follow the steps below:
 
 * using terminal, change directed (cd) into the folder that contains main.py and run the command "python main.py"
  
-[Introduction](##Introduction)
-
+## <a name="Introduction"></a>Introduction
+----------------------------
 The goal of this program is to provide an extension of a current web-based consensus finder program (originally written by Bryan Jones) by identifying the regions near the active site using protein database (PDB) files.  
 The current consensus finder returns substitutions throughout the amino acid sequence. To change the susbstrate specificity, researchers focus primarily on only the active site and in order to stabilize . 
 The consensus finder is written in Python and protein database files can be read using the molecular visualization system PyMOL.
@@ -33,13 +33,13 @@ The consensus finder is written in Python and protein database files can be read
  * To submit bug reports and feature suggestions, or to track changes, email:
 	kanxx030@umn.edu
 
-##REQUIREMENTS
+## <a name="Requirements"></a>Requirements
 ----------------------------
 The current program can only be run locally on Windows or Mac OSX.  The program will later be added to web server so it will be accessible on any other systems such as Mac and Linux.
 Python modules needed: {os, csv, numpy} (default, installed with Python 2.7 or 3.4) and Biopython (download available at biopython.org)
 Package used: Anaconda
 
-##CONFIGURATION
+## <a name="Configuration"></a>Configuration
 ----------------------------
 1.  Open terminal, change directory to where main.py is located using "cd" command 
 2.  Make sure there is a file named "Input.csv" in the working directory by typing "ls" in terminal
@@ -54,7 +54,7 @@ A
 
 specifies using PDB file with four-digit code 4EB0, chain A, residue 84 and 3 angstroms as search parameters.  Open program in an advanced text editor (BBEdit), or IDLE such as Pycharm and run the program.  The output of the program should be displayed and stored in a new folder named "Output"
 
-##OUTPUT
+## <a name="Output"></a>Output
 ----------------------------
 A total of three output files should be found in the "output" folder.
 
