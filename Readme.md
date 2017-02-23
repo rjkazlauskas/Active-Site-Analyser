@@ -6,7 +6,7 @@
  * Requirements 
  * Configuration
  * Output
- * [DING](##troubleshooting)
+ * [TROUBLESHOOTING](##-troubleshooting)
 
 ##QUICKSTART
 ----------------------------
