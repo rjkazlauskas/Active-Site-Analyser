@@ -68,7 +68,7 @@ I suggest opening each of the files in Excel, as using normal text editors might
 **residue_list.csv** contains a list of residues in the structure.  Note that water is excluded and other substrates are listed at the bottom.
 **simple_output and detailed_output** are the standard output files containing the closest atoms to the user-defined active site residue.  The simple output only shows the closest atoms from each residue, and other atoms are compiled as a list.  
 
-[Troubleshooting](##Troubleshooting)
+##Troubleshooting
 ----------------------------
 * "I can't run the program.  It's giving me some sort of error code."
 
