@@ -52,7 +52,7 @@ A
 3
 ```
 
-	or 4EB0, A, 84, 3 specifies using PDB file with four-digit code 4EB0, chain A, residue 84 and 3 angstroms as search parameters
+or 4EB0, A, 84, 3 specifies using PDB file with four-digit code 4EB0, chain A, residue 84 and 3 angstroms as search parameters
 5.  Open program in an advanced text editor (BBEdit), or IDLE such as Pycharm and run the program.  The output of the program should be displayed and stored in a new folder named "Output"
 
 ##OUTPUT
