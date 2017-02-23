@@ -8,7 +8,7 @@
  * Output
  * Troubleshooting
 
-[Quickstart]##QUICKSTART
+[Quickstart]##quickstart
 ----------------------------
 This program reads through pdb files and returns atoms that are close to a
 predifined active site residue specified by the user.  
