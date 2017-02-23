@@ -6,13 +6,10 @@
 import os;import csv;import numpy as np;from Bio.PDB import PDBList;from Bio.PDB import PDBParser
 filebase=os.path.dirname(os.path.realpath(__file__))
 outfilebase=filebase+'/output'
-consensusfilebase=filebase+'/consensus'
 if not os.path.exists(outfilebase):
     os.makedirs(outfilebase)
-if not os.path.exists(consensusfilebase):
-    os.makedirs(consensusfilebase)
 #Arrays
-atr=[];val=[];csvlist=[];ares=[];resname=[];rescode=[];heteroname=[];heterocode=[];atomlist=[];atomnamelist=[];info=[];pinfo=[];hitnum_list=[];hitting=[]
+atr=[];val=[];csvlist=[];ares=[];resname=[];rescode=[];heteroname=[];heterocode=[];atomlist=[];atomnamelist=[];hitnum_list=[];hitting=[]
 sort1=[];sort2=[];sort3=[];sort4=[];sort5=[]
 #Reading info
 with open('Input.csv', 'r') as csvfile:
@@ -116,27 +113,4 @@ try:
 finally:
     sf.close()
     df.close()
-#Trimming results from consensus output
-#Opening files
-with open(consensusfilebase+'//'+select+'.fasta.txt_mutations.txt', 'r') as consensus_file:
-    for line in consensus_file:
-        info.append(line.split())
-with open(outfilebase+'//'+'simple_output.csv', 'r') as pdbresults:
-    for line in pdbresults:
-        pinfo.append(line.split(','))
-#Generating search hit
-for i in range(0, len(pinfo)):
-    hitnum_list.append(pinfo[i][1])
-#Writing output file
-f = open(consensusfilebase+'//'+select+'.fasta.txt_mutations_trimmed.txt','w')
-for r in range(0, len(info)):
-    if info[r][2] not in hitnum_list:
-        f.write(' '.join(info[r])+'\n')
-    else:
-        hitting.append(info[r][2])
-f.write('Residue(s) removed: ')
-for i in range(0, len(hitting)):
-    f.write(hitting[i]+' ')
-#Closing files
-f.close()
-consensus_file.close()
+
