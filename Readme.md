@@ -6,7 +6,7 @@
  * Requirements 
  * Configuration
  * Output
- * [Troubleshooting](##troubleshooting)
+ * [TROUBLESHOOTING](##troubleshooting)
 
 ##QUICKSTART
 ----------------------------
