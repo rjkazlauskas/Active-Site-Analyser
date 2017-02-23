@@ -6,7 +6,7 @@
  * Requirements 
  * Configuration
  * Output
- * [TROUBLESHOOTING](##troubleshooting)
+ * [DING](##troubleshooting)
 
 ##QUICKSTART
 ----------------------------
@@ -80,8 +80,6 @@ A simple "Ctrl+F" will break the infinite loop.  And please copy and paste the e
 
 * "How do I check my computer's python version?"
 
-Go to terminal, type "Python -V" on a mac or type "python --version" on windows cmd
-
-For other questions, please email rjk@umn.edu or kanxx030@umn.edu.  Thank you.  
+Go to terminal, type "Python -V" on a mac or type "python --version" on windows cmd.  For other questions, please email rjk@umn.edu or kanxx030@umn.edu.  Thank you.  
 
 
