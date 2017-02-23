@@ -1,12 +1,12 @@
 ##CONTENTS OF THIS FILE
 -----------------------------
  
- * [Quickstart](##QUICKSTART)
+ * [Quickstart](##Quickstart)
  * Introduction
  * Requirements 
  * Configuration
  * Output
- * [TROUBLESHOOTING](## Troubleshooting)
+ * [Troubleshooting](##Troubleshooting)
 
 ## QUICKSTART
 ----------------------------
