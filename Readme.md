@@ -2,14 +2,14 @@
 -----------------------------
  
  * [Quickstart](##Quickstart)
- * Introduction
+ * [Introduction](##Introduction)
  * Requirements 
  * Configuration
  * Output
  * [Troubleshooting](##Troubleshooting)
 
 ## QUICKSTART
-----------------------------
+
 This program reads through pdb files and returns atoms that are close to a
 predifined active site residue specified by the user.  
 To set up please follow the steps below:
@@ -18,8 +18,8 @@ To set up please follow the steps below:
 
 * using terminal, change directed (cd) into the folder that contains main.py and run the command "python main.py"
  
-## INTRODUCTION
-----------------------------
+[Introduction](##Introduction)
+
 The goal of this program is to provide an extension of a current web-based consensus finder program (originally written by Bryan Jones) by identifying the regions near the active site using protein database (PDB) files.  
 The current consensus finder returns substitutions throughout the amino acid sequence. To change the susbstrate specificity, researchers focus primarily on only the active site and in order to stabilize . 
 The consensus finder is written in Python and protein database files can be read using the molecular visualization system PyMOL.
@@ -68,7 +68,7 @@ I suggest opening each of the files in Excel, as using normal text editors might
 **residue_list.csv** contains a list of residues in the structure.  Note that water is excluded and other substrates are listed at the bottom.
 **simple_output and detailed_output** are the standard output files containing the closest atoms to the user-defined active site residue.  The simple output only shows the closest atoms from each residue, and other atoms are compiled as a list.  
 
-## Troubleshooting
+[Troubleshooting](##Troubleshooting)
 ----------------------------
 * "I can't run the program.  It's giving me some sort of error code."
 
