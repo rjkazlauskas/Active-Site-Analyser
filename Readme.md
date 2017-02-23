@@ -45,10 +45,11 @@ Package used: Anaconda
 2.  Make sure there is a file named "Input.csv" in the working directory by typing "ls" in terminal
 3.  Make sure your "Input.csv" is formatted correctly, for example:
 
-``` 4EB0
-	A
-	84
-	3
+``` 
+4EB0
+A
+84
+3
 ```
 
 	or 4EB0, A, 84, 3 specifies using PDB file with four-digit code 4EB0, chain A, residue 84 and 3 angstroms as search parameters
