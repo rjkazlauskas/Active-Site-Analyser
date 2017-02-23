@@ -15,6 +15,7 @@ predifined active site residue specified by the user.
 To set up please follow the steps below:
 
 -make sure Input.csv, which contains all the parameters is in the working directory
+
 -using terminal, change directed (cd) into the folder that contains main.py and run the command "python main.py"
  
 ##INTRODUCTION
@@ -47,7 +48,8 @@ Package used: Anaconda
 ``` 4EB0
 	A
 	84
-	3```
+	3
+```
 
 	or 4EB0, A, 84, 3 specifies using PDB file with four-digit code 4EB0, chain A, residue 84 and 3 angstroms as search parameters
 5.  Open program in an advanced text editor (BBEdit), or IDLE such as Pycharm and run the program.  The output of the program should be displayed and stored in a new folder named "Output"
