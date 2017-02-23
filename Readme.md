@@ -79,6 +79,7 @@ First thing I would check is the if all the required folders and files are prese
 A simple "Ctrl+F" will break the infinite loop.  And please copy and paste the error message and send it to kanxx030@umn.edu.
 
 * "How do I check my computer's python version?"
+
 On a mac:
 ```
 Python -V
@@ -87,7 +88,8 @@ On Windows cmd:
 ```
 python --version
 ```
-```
+
+
 
 For other questions, please email rjk@umn.edu or kanxx030@umn.edu.  Thank you.  
 
