@@ -14,9 +14,9 @@ This program reads through pdb files and returns atoms that are close to a
 predifined active site residue specified by the user.  
 To set up please follow the steps below:
 
--make sure Input.csv, which contains all the parameters is in the working directory
+*make sure Input.csv, which contains all the parameters is in the working directory
 
--using terminal, change directed (cd) into the folder that contains main.py and run the command "python main.py"
+*using terminal, change directed (cd) into the folder that contains main.py and run the command "python main.py"
  
 ##INTRODUCTION
 ----------------------------
@@ -52,25 +52,33 @@ A
 3
 ```
 
-specifies using PDB file with four-digit code 4EB0, chain A, residue 84 and 3 angstroms as search parameters
-
-Open program in an advanced text editor (BBEdit), or IDLE such as Pycharm and run the program.  The output of the program should be displayed and stored in a new folder named "Output"
+specifies using PDB file with four-digit code 4EB0, chain A, residue 84 and 3 angstroms as search parameters.  Open program in an advanced text editor (BBEdit), or IDLE such as Pycharm and run the program.  The output of the program should be displayed and stored in a new folder named "Output"
 
 ##OUTPUT
 ----------------------------
+A total of three output files should be found in the "output" folder.
 
+```
+simple_output.csv
+residue_list.csv
+detailed_output.csv
+```
+
+I suggest opening each of the files in Excel, as using normal text editors might cause the document to look a bit chaotic with all the commas that csv's have.  The contents of the csv's are described by their respective titles.  
+**residue_list.csv** contains a list of residues in the structure.  Note that water is excluded and other substrates are listed at the bottom.
+**simple_output and detailed_output** are the standard output files containing the closest atoms to the user-defined active site residue.  The simple output only shows the closest atoms from each residue, and other atoms are compiled as a list.  
 
 ##TROUBLESHOOTING
 ----------------------------
--"I can't run the program.  It's giving me some sort of error code."
+*"I can't run the program.  It's giving me some sort of error code."
 
 First thing I would check is the if all the required folders and files are present.  An input.csv file is required to feed the program our search criteria.  I would also check if all the required Python libraries and modules are installed, since this program mainly relies on Bio.PDB.  
 
--"I am running this program but it is looping infinitely, what do I do?"
+*"I am running this program but it is looping infinitely, what do I do?"
 
 A simple "Ctrl+F" will break the infinite loop.  And please copy and paste the error message and send it to kanxx030@umn.edu.
 
--"How do I check my computer's python version?"
+*"How do I check my computer's python version?"
 
 Go to terminal, type "Python -V" on a mac or type "python --version" on windows cmd
 
