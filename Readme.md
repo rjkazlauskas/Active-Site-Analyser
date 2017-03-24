@@ -11,18 +11,17 @@
 ## <a name="Quickstart"></a>Quickstart
 ----------------------------
 This program reads through pdb files and returns atoms that are close to a
-predifined active site residue specified by the user.  
-To set up please follow the steps below:
+a residue specified by the user.  
+To run:
 
-* make sure Input.csv, which contains all the parameters is in the working directory
-
-* using terminal, change directed (cd) into the folder that contains main.py and run the command "python main.py"
+* input parameters should be in a file named input.csv in the working directory _input is capitalized below; does this matter?_
+* _needs more about the results of consensus finder needed_
+* using terminal, change the working directory to the directory that contains main.py and run the command "python main.py"
  
 ## <a name="Introduction"></a>Introduction
 ----------------------------
-The goal of this program is to provide an extension of a current web-based consensus finder program (originally written by Bryan Jones) by identifying the regions near the active site using protein database (PDB) files.  
-The current consensus finder returns substitutions throughout the amino acid sequence. To change the susbstrate specificity, researchers focus primarily on only the active site and in order to stabilize . 
-The consensus finder is written in Python and protein database files can be read using the molecular visualization system PyMOL.
+This program extends the program consensus finder program (written by Bryan Jones) by identifying the regions near the active site.  Consensus finder identifies allowed amino acid substitutions throughout a given amino acid sequence. Sometimes one would like to avoid changes in the substrate binding region (goal is protein stabilization); other times one would prefer changes in the substrate binding region (goal is changing substrate specificity). Active site finder allows users to choose the subset of the consensus finder results that are most appropriate.  
+Active site finder is written in Python. Protein database files can be read using the molecular visualization program PyMOL.
 
  * For a full description of the module, visit the project page:
 	kazlab@umn.edu
@@ -35,9 +34,9 @@ The consensus finder is written in Python and protein database files can be read
 
 ## <a name="Requirements"></a>Requirements
 ----------------------------
-The current program can only be run locally on Windows or Mac OSX.  The program will later be added to web server so it will be accessible on any other systems such as Mac and Linux.
-Python modules needed: {os, csv, numpy} (default, installed with Python 2.7 or 3.4) and Biopython (download available at biopython.org)
-Package used: Anaconda
+The current program runs locally on Windows or Mac OSX. A web-based version is planned.
+The program uses Python modules: {os, csv, numpy}, which are installed by default with Python 2.7 or 3.4, and Biopython (download available at biopython.org)
+Package used: Anaconda _not clear if this is relevant_
 
 ## <a name="Configuration"></a>Configuration
 ----------------------------
@@ -52,7 +51,8 @@ A
 3
 ```
 
-specifies using PDB file with four-digit code 4EB0, chain A, residue 84 and 3 angstroms as search parameters.  Open program in an advanced text editor (BBEdit), or IDLE such as Pycharm and run the program.  The output of the program should be displayed and stored in a new folder named "Output"
+specifies using PDB file with four-digit code 4EB0, chain A, residue 84 and 3 angstroms as search parameters.  
+4. Open program in an advanced text editor (BBEdit), or IDLE such as Pycharm and run the program.  The output of the program should be displayed and stored in a new folder named "Output"
 
 ## <a name="Output"></a>Output
 ----------------------------
@@ -64,21 +64,23 @@ residue_list.csv
 detailed_output.csv
 ```
 
-I suggest opening each of the files in Excel, as using normal text editors might cause the document to look a bit chaotic with all the commas that csv's have.  The contents of the csv's are described by their respective titles.  
-**residue_list.csv** contains a list of residues in the structure.  Note that water is excluded and other substrates are listed at the bottom.
-**simple_output and detailed_output** are the standard output files containing the closest atoms to the user-defined active site residue.  The simple output only shows the closest atoms from each residue, and other atoms are compiled as a list.  
+Open the files in Excel. (cvs files can look chaotic in a text editor.)
+**residue_list.csv** lists all residues in the structure, including substrates or heteroatoms.  Water is excluded.
+**simple_output** lists the closest atoms from each residue, and other atoms are compiled as a list. _need clearer explanation of the simple and detailed output._
+**detailed_output** list the standard output files containing the closest atoms to the user-defined active site residue.   
 
 ## <a name="Troubleshooting"></a>Troubleshooting
 ----------------------------
 * "I can't run the program.  It's giving me some sort of error code."
 
-First thing I would check is the if all the required folders and files are present.  An input.csv file is required to feed the program our search criteria.  I would also check if all the required Python libraries and modules are installed, since this program mainly relies on Bio.PDB.  
+Check that all the required folders and files are present.  An input.csv file is required to feed the program our search criteria. _confusing - required file in mentioned, but what folders are required?_  
+Check if all the required Python libraries and modules are installed, since this program mainly relies on Bio.PDB _Bio.PDB is never mentioned above; above modules are mentioned, but libraries are not_.  
 
 * "I am running this program but it is looping infinitely, what do I do?"
 
-A simple "Ctrl+F" will break the infinite loop.  And please copy and paste the error message and send it to kanxx030@umn.edu.
+"Ctrl+F" will break the infinite loop.  Please copy and paste the error message and send it to kanxx030@umn.edu.
 
-* "How do I check my computer's python version?"
+* "How do I check my computer's python version?"  _why would I need to do this?_
 
 On a mac:
 ```
@@ -89,8 +91,4 @@ On Windows cmd:
 python --version
 ```
 
-
-
 For other questions, please email rjk@umn.edu or kanxx030@umn.edu.  Thank you.  
-
-
